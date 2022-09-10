@@ -37,14 +37,12 @@ const Projects = () => {
         },
     ];
     return (
-        <div className="lg:pt-8">
-            <div className="lg:flex lg:items-center lg:justify-between">
-                <div className="font-bold text-4xl  pt-8 ">Projects</div>
-                <a href="https://github.com/aimdexter" className='flex lg:mt-8 text-white bg-blue-500 gap-5 mt-2 py-2 px-4 rounded-full  items-center w-fit' target="_blank">
-                    <span className="font-bold text-xs">View All Projects</span>
-                    <div className="">
-                        <BsArrowRight />
-                    </div>
+        <div className="pt-8">
+            <div className="flex justify-between lg:pb-10 lg:flex lg:items-center lg:justify-between">
+                <div className="font-bold text-4xl">Projects</div>
+                <a href="https://github.com/" className='flex text-white bg-blue-500 gap-5 py-2 px-4 rounded-full items-center w-fit' target="_blank">
+                    <span className="text-md">View All Projects</span>
+                    <BsArrowRight />
                 </a>
             </div>
             <div className="py-7 flex flex-wrap gap-5 justify-center lg:justify-between items-start md:flex-row md:flex-wrap">
@@ -55,7 +53,7 @@ const Projects = () => {
                                 <img className="py-2 w-[450px]" src={image} alt={title} />
                             </div>
                             <div className="pb-8">
-                                <div className="text-2xl uppercase font-semibold py-5">
+                                <div className="text-2xl font-semibold py-5">
                                     {title}
                                 </div>
                                 <div className="flex flex-wrap gap-2">
