@@ -4,7 +4,7 @@ const Team = () => {
             id: 1,
             name: 'JJarno',
             image: '/images/team/cooper.png',
-            role: ' ',
+            role: 'founder',
             email: 'jamcooperk@mail.com',
         },
         {
@@ -47,30 +47,25 @@ const Team = () => {
     return (
         <div className="">
             <div className="font-bold text-center text-4xl py-8">Meet our team</div>
-            <div className="py-7 flex flex-wrap gap-5 justify-center lg:justify-between items-start md:flex-row md:flex-wrap">
+            <div className="py-7 flex flex-wrap gap-7 justify-center lg:justify-between items-start md:flex-row md:flex-wrap">
                 {members.map(({ id, name, image, role, email }) => {
                     return (
-                        <div key={id} className="w-fit rounded-2xl  ">
+                        <div key={id} className="w-fit pb-8">
                             <div className="">
-                                <img className="py-2 w-[300px] lg:w-[310px]" src={image} alt={name} />
+                                <img className="w-[300px] lg:w-[310px] pb-5" src={image} alt={name} />
                             </div>
-                            <div className="pb-8 flex flex-col justify-between">
-                                <div className="text-2xl font-semibold py-5">
+                            <div className="flex flex-col gap-2">
+                                <div className="text-2xl font-semibold ">
                                     {name}
                                 </div>
-                                <div className="flex gap-6 text-base font-bold justify-between">
-                                    <div className="text-2xl font-semibold">{role}</div>
-                                </div>
-                                <div className="flex gap-6 text-base font-bold justify-between">
-                                    <div className="text-md font-semibold">{email}</div>
-                                </div>
-
+                                <div className="text-2xl font-semibold uppercase pb-3">{role}</div>
+                                <div className="text-md font-semibold">{email}</div>
                             </div>
                         </div>
                     );
                 })}
             </div>
-        </div>
+        </div >
 
     );
 }

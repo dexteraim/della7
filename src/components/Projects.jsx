@@ -44,7 +44,7 @@ const Projects = () => {
             <div className="py-7 flex flex-wrap gap-5 justify-center lg:justify-between items-start md:flex-row md:flex-wrap">
                 {projects.map(({ id, title, image, demo, type }) => {
                     return (
-                        <div key={id} className="w-[450px] rounded-2xl  ">
+                        <div key={id} className="w-[450px]">
                             <div className="">
                                 <img className="py-2 w-[450px]" src={image} alt={title} />
                             </div>
