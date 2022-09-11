@@ -77,7 +77,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className="py-6 text-sm text-center text-gray-400">© 2022 Della7 - IT Solutions. All rights reserved.</div>
-        </footer>);
+        </footer>
+    );
 }
 
 export default Footer;
