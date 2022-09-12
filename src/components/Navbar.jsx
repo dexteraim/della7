@@ -3,7 +3,7 @@ import {
   AiOutlineClose,
   AiOutlineContacts,
   AiOutlineHome,
-  AiOutlineMenuFold,
+  AiOutlineMenu,
   AiOutlineTeam,
 } from "react-icons/ai";
 import { MdOutlineCleaningServices } from "react-icons/md";
@@ -37,9 +37,7 @@ const Navbar = () => {
         className="sticky top-0 z-50 flex h-14 items-center justify-between px-4 py-12 transition duration-500 lg:items-center "
       >
         <HashLink smooth to="/#home">
-          <h2 className="text-2xl font-bold">
-            <img src={Logo} alt="" />
-          </h2>
+          <img src={Logo} alt="" className="w-[146.98px] h-[43.05px]" />
         </HashLink>
         <div
           onClick={() => setShowNav(!showNav)}
@@ -146,7 +144,7 @@ const Navbar = () => {
             </IconContext.Provider>
           ) : (
             <IconContext.Provider value={{ className: "text-2xl" }}>
-              <AiOutlineMenuFold onClick={() => setShowNav(!showNav)} />
+              <AiOutlineMenu onClick={() => setShowNav(!showNav)} />
             </IconContext.Provider>
           )}
         </button>
