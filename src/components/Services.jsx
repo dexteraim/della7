@@ -34,9 +34,9 @@ const Services = () => {
     <div className="mx-auto flex max-w-[1024px] flex-wrap items-center justify-between gap-[48px] px-4 pb-[88px]">
       {services.map(({ id, service, image, content }) => {
         return (
-          <div className="">
+          <div key={id} className="">
             <div className="flex gap-[24px]">
-              <img key={id} src={image} alt="service ison" className="h-[32px] w-[32px]" />
+              <img src={image} alt="service ison" className="h-[32px] w-[32px]" />
               <h1 className="text-[26px] text-primary-blue">{service}</h1>
             </div>
             <h2 className="w-[342px] pt-[18px] text-[16px] text-primary-blue opacity-[70%]">

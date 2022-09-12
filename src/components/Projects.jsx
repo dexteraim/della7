@@ -1,6 +1,35 @@
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { BsArrowRight } from 'react-icons/bs';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const Projects = () => {
+  const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+    const {
+      carouselState: { currentSlide },
+    } = rest;
+    return (
+      <div className="absolute top-2 right-4 flex gap-[12px] text-[24px]">
+        {' '}
+        <button className="" onClick={() => goToSlide(currentSlide - 1)}>
+          {' '}
+          <AiOutlineArrowLeft />{' '}
+        </button>
+        <button className="" onClick={() => goToSlide(currentSlide + 1)}>
+          {' '}
+          <AiOutlineArrowRight />{' '}
+        </button>
+      </div>
+    );
+  };
+
+  const responsive = {
+    mobile: {
+      breakpoint: { max: 768, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+  };
   const projects = [
     {
       id: 1,
@@ -32,12 +61,12 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="mx-auto max-w-[1024px] px-4 pt-8">
-      <div className="flex justify-between lg:flex lg:items-center lg:justify-between lg:pb-10">
-        <div className="text-4xl font-bold">Projects</div>
+    <div className="relative mx-auto max-w-[1024px] px-4">
+      <div className="flex items-center justify-between pb-[34px] lg:flex lg:items-center lg:justify-between lg:pb-10">
+        <div className="text-[28px] text-primary-blue">Projects</div>
         <a
           href="https://github.com/"
-          className="flex w-fit items-center gap-5 rounded-full bg-blue-500 py-2 px-4 text-white"
+          className="hidden w-fit items-center gap-5 rounded-full bg-blue-500 py-2 px-4 text-white lg:flex "
           target="_blank"
           rel="noreferrer"
         >
@@ -45,7 +74,42 @@ const Projects = () => {
           <BsArrowRight />
         </a>
       </div>
-      <div className="flex flex-wrap items-start justify-center gap-5 py-7 md:flex-row md:flex-wrap lg:justify-between">
+      <div className="md:hidden">
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          arrows={false}
+          renderButtonGroupOutside={true}
+          customButtonGroup={<ButtonGroup />}
+        >
+          {projects.map(({ id, title, image, demo, type }) => {
+            return (
+              <div key={id} className="w-fit">
+                <div className="">
+                  <img className="" src={image} alt={title} />
+                </div>
+                <div className="">
+                  <div className="pt-[32px] pb-[16px] text-[16px] text-primary-blue">{title}</div>
+                  <div className="flex justify-between">
+                    <div className="text-[14px] text-primary-blue opacity-[70%]">{type}</div>
+                    <a
+                      href={demo}
+                      target="_blank"
+                      className="flex items-center gap-5"
+                      rel="noreferrer"
+                    >
+                      <div className="text-[14px] text-primary-blue">View Project</div>
+                      <BsArrowRight />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </Carousel>
+      </div>
+
+      <div className="hidden flex-wrap items-start justify-center gap-5 py-7 md:flex md:flex-row md:flex-wrap lg:justify-between">
         {projects.map(({ id, title, image, demo, type }) => {
           return (
             <div key={id} className="w-[450px]">
