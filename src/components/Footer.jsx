@@ -1,17 +1,13 @@
-import { FaFacebook } from "react-icons/fa";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillTwitterCircle,
-} from "react-icons/ai";
-import { BsArrowRight } from "react-icons/bs";
-import { RiArrowDownSLine } from "react-icons/ri";
+import { FaFacebook } from 'react-icons/fa';
+import { AiFillGithub, AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
+import { BsArrowRight } from 'react-icons/bs';
+import LanguageToggle from './Languagetoggle';
 
 const Footer = () => {
   return (
     <>
       <img className="w-screen pb-8" src="/images/footer/team.png" alt="team" />
-      <footer className="divide-y bg-white px-4 text-black mx-auto max-w-[1024px]">
+      <footer className="mx-auto max-w-[1024px] divide-y bg-white px-4 text-black">
         <div className="mx-auto flex flex-col justify-between space-y-8 py-10 lg:flex-row lg:space-y-0">
           <div className="lg:w-1/3">
             <a
@@ -66,17 +62,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="#"
-                    className="flex items-center gap-3"
-                  >
-                    EN
-                    <div className="text-xl">
-                      <RiArrowDownSLine />
-                    </div>
-                  </a>
+                  <LanguageToggle />
                 </li>
               </ul>
             </div>
