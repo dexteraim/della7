@@ -61,7 +61,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="relative mx-auto max-w-[1024px] px-4 pb-[88px]">
+    <div className="relative mx-auto max-w-[1024px] px-4 pb-[88px] md:pb-[199.5px]">
       <div className="flex items-center justify-between pb-[34px] lg:flex lg:items-center lg:justify-between lg:pb-10">
         <div className="text-[28px] text-primary-blue">Projects</div>
         <a
@@ -116,25 +116,25 @@ const Projects = () => {
         </span>
       </div>
 
-      <div className="hidden flex-wrap items-start justify-center gap-5 py-7 md:flex md:flex-row md:flex-wrap lg:justify-between">
+      <div className="hidden flex-wrap items-start justify-center gap-5 py-7 md:flex md:flex-row md:flex-wrap md:justify-between">
         {projects.map(({ id, title, image, demo, type }) => {
           return (
-            <div key={id} className="w-[450px]">
+            <div key={id} className="w-[450px] md:w-fit">
               <div className="">
-                <img className="w-[450px] py-2" src={image} alt={title} />
+                <img className="w-[450px] py-2 md:w-[350px] lg:w-[480px]" src={image} alt={title} />
               </div>
-              <div className="pb-8">
-                <div className="py-5 text-2xl font-semibold">{title}</div>
+              <div className="pb-[72.5px] text-primary-blue">
+                <div className="text-[26px]">{title}</div>
                 <div className="flex flex-wrap gap-2"></div>
-                <div className="flex justify-between gap-6 text-base font-bold">
-                  <div className="text-xs font-normal text-gray-500">{type}</div>
+                <div className="flex justify-between pt-[15.5px]">
+                  <div className="md:text-[16px] md:opacity-[70%]">{type}</div>
                   <a
                     href={demo}
                     target="_blank"
                     className="flex items-center gap-5 px-2 pb-1 "
                     rel="noreferrer"
                   >
-                    <div className=" text-xs">View Project</div>
+                    <div className="md:text-[16px]">View Project</div>
                     <BsArrowRight />
                   </a>
                 </div>
