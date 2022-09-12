@@ -10,19 +10,10 @@ function App() {
     <div className="bg-hero-pattern bg-no-repeat font-Helvetica">
       <Navbar />
       <Header />
-      <div id="home" className="mx-auto max-w-[1024px] px-4">
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="team">
-          <Team />
-        </div>
-      </div>
+      <Projects />
+      <Team />
       <Tasks />
-      <img className="w-screen pb-8" src="/images/footer/team.png" alt="team" />
-      <div className="mx-auto max-w-[1024px] px-4">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

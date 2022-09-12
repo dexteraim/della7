@@ -45,7 +45,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="">
+    <div className="mx-auto max-w-[1024px] px-4">
       <div className="py-8 text-center text-4xl font-bold">Meet our team</div>
       <div className="flex flex-wrap items-start justify-center gap-7 py-7 md:flex-row md:flex-wrap lg:justify-between">
         {members.map(({ id, name, image, role, email }) => {

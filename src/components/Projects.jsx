@@ -32,7 +32,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="pt-8">
+    <div className="pt-8 mx-auto max-w-[1024px] px-4">
       <div className="flex justify-between lg:flex lg:items-center lg:justify-between lg:pb-10">
         <div className="text-4xl font-bold">Projects</div>
         <a
@@ -63,6 +63,7 @@ const Projects = () => {
                     href={demo}
                     target="_blank"
                     className="flex items-center gap-5 px-2 pb-1 "
+                    rel="noreferrer"
                   >
                     <div className=" text-xs">View Project</div>
                     <BsArrowRight />
