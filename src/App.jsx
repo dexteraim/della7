@@ -6,6 +6,7 @@ import Tasks from './components/Tasks';
 import Footer from './components/Footer';
 import Clients from './components/Clients';
 import Services from './components/Services';
+import Contact from './components/Contact';
 
 function App() {
   const newLocal = 'bg-hero bg-[center_top_0rem] bg-no-repeat font-Helvetica max-w-[1440px]';
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <Projects />
       <Team />
+      <Contact />
       <Tasks />
       <Footer />
     </div>
