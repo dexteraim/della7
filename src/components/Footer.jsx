@@ -15,7 +15,8 @@ const Footer = () => {
         <div className="mx-auto flex flex-col justify-between space-y-8 py-10 lg:flex-row lg:space-y-0">
           <div className="lg:w-1/3">
             <a
-              rel="_blank"
+              target="_blank"
+              rel="noreferrer"
               href="#"
               className="flex justify-center space-x-3 lg:justify-start"
             >
@@ -26,27 +27,27 @@ const Footer = () => {
             <div className="space-y-3">
               <ul className="space-y-3">
                 <li>
-                  <a rel="_blank" href="#">
+                  <a target="_blank" rel="noreferrer" href="#">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a rel="_blank" href="#">
+                  <a target="_blank" rel="noreferrer" href="#">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a rel="_blank" href="#">
+                  <a target="_blank" rel="noreferrer" href="#">
                     Our Clients
                   </a>
                 </li>
                 <li>
-                  <a rel="_blank" href="#">
+                  <a target="_blank" rel="noreferrer" href="#">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a rel="_blank" href="#">
+                  <a target="_blank" rel="noreferrer" href="#">
                     Our Team
                   </a>
                 </li>
@@ -55,17 +56,22 @@ const Footer = () => {
             <div className="space-y-3">
               <ul className="space-y-3">
                 <li>
-                  <a rel="_blank" href="#">
+                  <a target="_blank" rel="noreferrer" href="#">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a rel="_blank" href="#">
+                  <a target="_blank" rel="noreferrer" href="#">
                     Terms of Use
                   </a>
                 </li>
                 <li>
-                  <a rel="_blank" href="#" className="flex items-center gap-3">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="#"
+                    className="flex items-center gap-3"
+                  >
                     EN
                     <div className="text-xl">
                       <RiArrowDownSLine />
@@ -76,7 +82,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-col justify-between space-y-3">
               <a
-                rel="_blank"
+                target="_blank"
+                rel="noreferrer"
                 href="#"
                 className="flex w-fit items-center gap-5 rounded-3xl border-2 border-black p-2"
               >
@@ -87,7 +94,8 @@ const Footer = () => {
                 <div className="0">Follow Us</div>
                 <div className="flex gap-2 text-xl">
                   <a
-                    rel="_blank"
+                    target="_blank"
+                    rel="noreferrer"
                     href="#"
                     title="Facebook"
                     className="flex items-center p-1"
@@ -95,7 +103,8 @@ const Footer = () => {
                     <FaFacebook />
                   </a>
                   <a
-                    rel="_blank"
+                    target="_blank"
+                    rel="noreferrer"
                     href="#"
                     title="Twitter"
                     className="flex items-center p-1"
@@ -103,7 +112,8 @@ const Footer = () => {
                     <AiFillTwitterCircle />
                   </a>
                   <a
-                    rel="_blank"
+                    target="_blank"
+                    rel="noreferrer"
                     href="#"
                     title="Instagram"
                     className="flex items-center p-1"
@@ -111,7 +121,8 @@ const Footer = () => {
                     <AiFillInstagram />
                   </a>
                   <a
-                    rel="_blank"
+                    target="_blank"
+                    rel="noreferrer"
                     href="#"
                     title="Instagram"
                     className="flex items-center p-1"

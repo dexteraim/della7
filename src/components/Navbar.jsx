@@ -130,7 +130,8 @@ const Navbar = () => {
         </div>
         <div className="z-50 hidden gap-5 lg:flex">
           <a
-            rel="_blank"
+            target="_blank"
+            rel="noreferrer"
             href="#hi"
             className="flex w-[150px] items-center justify-between gap-5 rounded-3xl border-2 border-black p-2"
           >
