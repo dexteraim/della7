@@ -10,7 +10,8 @@ module.exports = {
         'primary-blue' : '#152044',
       },
       backgroundImage: {
-        'hero-pattern': "url('/images/bg/bg.svg')",
+        'hero': "url('/images/backgrounds/hero.svg')",
+        'service': "url('/images/backgrounds/bg_services.svg')",
       },
       fontFamily: {
         'Helvetica': 'Helvetica',
