@@ -61,12 +61,12 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="relative mx-auto max-w-[1024px] px-4">
+    <div className="relative mx-auto max-w-[1024px] px-4 pb-[88px]">
       <div className="flex items-center justify-between pb-[34px] lg:flex lg:items-center lg:justify-between lg:pb-10">
         <div className="text-[28px] text-primary-blue">Projects</div>
         <a
           href="https://github.com/"
-          className="hidden w-fit items-center gap-5 rounded-full bg-blue-500 py-2 px-4 text-white lg:flex "
+          className="hidden w-fit items-center gap-5 rounded-full bg-blue-500 py-2 px-4 text-white md:flex "
           target="_blank"
           rel="noreferrer"
         >
@@ -74,7 +74,7 @@ const Projects = () => {
           <BsArrowRight />
         </a>
       </div>
-      <div className="md:hidden">
+      <div className="pb-[32px] md:hidden">
         <Carousel
           responsive={responsive}
           infinite={true}
@@ -107,6 +107,13 @@ const Projects = () => {
             );
           })}
         </Carousel>
+      </div>
+      <div className=" mx-auto w-[341px] rounded-full bg-blue-500 py-2 text-center text-white md:hidden ">
+        <span className="text-[16px]">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">
+            View All Projects
+          </a>
+        </span>
       </div>
 
       <div className="hidden flex-wrap items-start justify-center gap-5 py-7 md:flex md:flex-row md:flex-wrap lg:justify-between">
