@@ -53,8 +53,10 @@ const Contact = () => {
           </label>
         </div>
         <div className="flex items-center justify-start gap-2 pt-[41px] text-start text-[14px]">
-          <input type="checkbox" className="checked:bg-blue-500" />I have read and accept the Terms
-          & Privacy
+          <input type="checkbox" className="checked:bg-blue-500" />I have read and accept the{' '}
+          <a href="" className="underline">
+            Terms & Privacy
+          </a>
         </div>
         <input type="hidden" name="redirect" value="" />
         <div className="flex w-full justify-end pt-[43px]">
