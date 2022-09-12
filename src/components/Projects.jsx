@@ -80,13 +80,16 @@ const Projects = () => {
           infinite={true}
           arrows={false}
           renderButtonGroupOutside={true}
+          centerMode={false}
+          className=""
+          adaptiveHeight={true}
           customButtonGroup={<ButtonGroup />}
         >
           {projects.map(({ id, title, image, demo, type }) => {
             return (
-              <div key={id} className="w-fit">
+              <div key={id} className="">
                 <div className="">
-                  <img className="" src={image} alt={title} />
+                  <img className="w-full" src={image} alt={title} />
                 </div>
                 <div className="">
                   <div className="pt-[32px] pb-[16px] text-[16px] text-primary-blue">{title}</div>

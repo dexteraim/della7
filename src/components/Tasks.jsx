@@ -1,6 +1,14 @@
-import Slider from 'infinite-react-carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const Tasks = () => {
+  const responsive = {
+    mobile: {
+      breakpoint: { max: 768, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+  };
   const settings1 = {
     arrows: false,
     autoplay: true,
@@ -11,45 +19,34 @@ const Tasks = () => {
     arrows: false,
     autoplay: true,
     duration: 100,
-    slidesToShow: 5,
+    slidesToShow: 1,
   };
   return (
     <>
-      <div className="hidden h-44 flex-col justify-center text-center text-xl font-semibold lg:flex">
-        <Slider {...settings1}>
-          <div className="w-full">Web Applications</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-2 w-2" />
-          <div className="">Apps</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-2 w-2" />
-          <div className="">Digitalisation</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-2 w-2" />
-          <div className="">Contracts</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-2 w-2" />
-          <div className="">Contracts 2</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-2 w-2" />
-          <div className="">Contracts 2</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-2 w-2" />
-          <div className="">Contracts 2</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-2 w-2" />
-        </Slider>
-      </div>
-      <div className="flex h-44 flex-col justify-center text-center text-xs font-semibold lg:hidden">
-        <Slider {...settings2}>
-          <div className="w-full">Web Applications</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-1 w-1" />
-          <div className="">Apps</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-1 w-1" />
-          <div className="">Digitalisation</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-1 w-1" />
-          <div className="">Contracts</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-1 w-1" />
-          <div className="">Contracts 2</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-1 w-1" />
-          <div className="">Contracts 2</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-1 w-1" />
-          <div className="">Contracts 2</div>
-          <img src="/images/carousel/dot-svgrepo-com.svg" alt="" className="h-1 w-1" />
-        </Slider>
+      <div className="pb-[32px]">
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          arrows={false}
+          autoplay={true}
+          renderButtonGroupOutside={true}
+        >
+          <div className="justify-center py-[72px] text-center text-[48px] text-primary-blue">
+            Web Applications
+          </div>
+          <div className="justify-center py-[72px] text-center text-[48px] text-primary-blue">
+            Apps
+          </div>
+          <div className="justify-center py-[72px] text-center text-[48px] text-primary-blue">
+            Digitalisation
+          </div>
+          <div className="justify-center py-[72px] text-center text-[48px] text-primary-blue">
+            Automation
+          </div>
+          <div className="justify-center py-[72px] text-center text-[48px] text-primary-blue">
+            Contract Us
+          </div>
+        </Carousel>
       </div>
     </>
   );
