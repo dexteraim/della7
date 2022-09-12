@@ -9,6 +9,12 @@ module.exports = {
       colors : {
         'primary-blue' : '#152044',
       },
+      backgroundImage: {
+        'hero-pattern': "url('/images/bg/bg.svg')",
+      },
+      fontFamily: {
+        'Helvetica': 'Helvetica',
+      },
     },
   },
   plugins: [],
