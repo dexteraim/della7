@@ -31,7 +31,14 @@ const Services = () => {
   ];
 
   return (
-    <div className="mx-auto flex max-w-[1024px] flex-wrap items-center justify-between gap-[48px] px-4 pb-[88px]">
+    <div
+      id="about"
+      className="mx-auto flex max-w-[1024px] flex-wrap items-center justify-between gap-[48px] px-4 pb-[88px]"
+    >
+      <h1 className="text-[28px] text-primary-blue md:text-[40px] lg:text-[50px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscin elit. Lacinia tristique est mattis a morbi
+        dapibus dignissim.
+      </h1>
       {services.map(({ id, service, image, content }) => {
         return (
           <div key={id} className="">

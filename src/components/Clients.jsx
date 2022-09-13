@@ -48,8 +48,8 @@ const Clients = () => {
     slidesToShow: 5,
   };
   return (
-    <div className="pb-[48px] lg:pb-[215px]">
-      <h1 className="tex-[26px] pb-[17px] text-center font-semibold text-primary-blue">
+    <div id="clients" className="pb-[48px] pt-[2rem] lg:pb-[215px]">
+      <h1 className="pb-[17px] text-center text-[26px] font-semibold text-primary-blue">
         Our clients
       </h1>
       <div className="flex flex-col justify-center md:hidden">

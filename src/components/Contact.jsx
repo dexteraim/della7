@@ -3,7 +3,10 @@ import ContactImg from '/images/backgrounds/contact.svg';
 
 const Contact = () => {
   return (
-    <div className=" mx-auto max-w-[1024px] px-4  pt-[88px] text-center text-[26px] text-primary-blue md:flex md:items-start md:justify-between md:text-start lg:gap-[100px]">
+    <div
+      id="contact"
+      className="mx-auto max-w-[1024px] px-4  pt-[100px] text-center text-[26px] text-primary-blue md:flex md:items-start md:justify-between md:text-start lg:gap-[100px]"
+    >
       <div className="flex flex-1 flex-col gap-[40px] md:items-start">
         <h1 className="md:pr-5 md:text-[35px]">
           Let’s work together, email us or call us. We are here for you!

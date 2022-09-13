@@ -35,6 +35,7 @@ const Navbar = () => {
           backgroundColor: navColor,
           transition: 'all 0.5s',
         }}
+        id="home"
         className="sticky top-0 z-50 flex h-14 items-center justify-between px-4 py-12 transition duration-500 lg:items-center "
       >
         <HashLink smooth to="/#home">
@@ -109,15 +110,14 @@ const Navbar = () => {
         </div>
         <div className="z-50 hidden gap-5 lg:flex">
           <LanguageToggle />
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="#hi"
+          <HashLink
+            smooth
+            to="#contact"
             className="flex h-[50px] w-[194px] items-center justify-between gap-[46px] rounded-3xl border-2 border-black px-[24px] py-[16px] text-[16px]"
           >
             Contact Us
             <BsArrowRight />
-          </a>
+          </HashLink>
         </div>
         <button className="z-10 lg:hidden">
           {showNav ? (

@@ -61,7 +61,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="relative mx-auto max-w-[1024px] px-4 pb-[88px] md:pb-[199.5px]">
+    <div id="projects" className="relative mx-auto max-w-[1024px] px-4 pb-[88px] md:pb-[199.5px]">
       <div className="flex items-center justify-between pb-[34px] lg:flex lg:items-center lg:justify-between lg:pb-10">
         <div className="text-[28px] text-primary-blue">Projects</div>
         <a
