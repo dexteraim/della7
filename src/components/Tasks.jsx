@@ -9,18 +9,6 @@ const Tasks = () => {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
-  const settings1 = {
-    arrows: false,
-    autoplay: true,
-    duration: 100,
-    slidesToShow: 6,
-  };
-  const settings2 = {
-    arrows: false,
-    autoplay: true,
-    duration: 100,
-    slidesToShow: 1,
-  };
   return (
     <>
       <div className="pb-[32px]">
@@ -29,6 +17,7 @@ const Tasks = () => {
           infinite={true}
           arrows={false}
           autoplay={true}
+          autoplaySpeed="1"
           renderButtonGroupOutside={true}
         >
           <div className="justify-center py-[72px] text-center text-[48px] text-primary-blue">
