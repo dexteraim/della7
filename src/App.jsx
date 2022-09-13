@@ -9,7 +9,8 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 
 function App() {
-  const newLocal = 'bg-hero bg-[center_top_0rem] bg-no-repeat font-Helvetica max-w-[1440px]';
+  const newLocal =
+    'bg-hero bg-[center_top_0rem] bg-no-repeat font-Helvetica max-w-[1440px] mx-auto';
   return (
     <div id="home" className={newLocal}>
       <Navbar />

@@ -8,6 +8,11 @@ const Tasks = () => {
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
+    desktop: {
+      breakpoint: { max: 2560, min: 768 },
+      items: 3,
+      slidesToSlide: 1, // optional, default to 1.
+    },
   };
   return (
     <>
