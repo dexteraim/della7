@@ -16,8 +16,12 @@ const Contact = () => {
           <BsArrowRight />
         </button>
       </div>
-      <form className="mt-[49px] flex-1 md:mt-0" action="" method="POST">
-        <input type="hidden" name="access_key" value="" />
+      <form
+        className="mt-[49px] flex-1 md:mt-0"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input type="hidden" name="access_key" value="9d104202-6545-4b45-8129-71daf02e9d0a" />
         <div className=" flex flex-col-reverse items-start">
           <input
             id="Name"
@@ -60,7 +64,7 @@ const Contact = () => {
         </div>
         <div className="flex items-center justify-start gap-2 pt-[41px] text-start text-[14px] lg:justify-between">
           <div className="flex items-center gap-2">
-            <input type="checkbox" className="checked:bg-blue-500" />
+            <input required type="checkbox" className="checked:bg-blue-500" />
             <div className="">
               <span className="">I have read and accept the </span>
               <a href="" className="underline">
