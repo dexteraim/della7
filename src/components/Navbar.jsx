@@ -107,6 +107,14 @@ const Navbar = () => {
               Our Team
             </HashLink>
           </div>
+          <HashLink
+            smooth
+            to="#contact"
+            className="flex h-[50px] w-[194px] items-center justify-between gap-[46px] rounded-3xl border-2 border-black px-[24px] py-[16px] text-[16px] lg:hidden"
+          >
+            Contact Us
+            <BsArrowRight />
+          </HashLink>
         </div>
         <div className="z-50 hidden gap-5 lg:flex">
           <LanguageToggle />
