@@ -7,21 +7,20 @@ const Footer = () => {
   return (
     <>
       <img className="w-screen pb-8" src="/images/footer/team.png" alt="team" />
-      <footer className="mx-auto max-w-[1024px] divide-y bg-white px-4 text-black">
-        <div className="mx-auto flex flex-col justify-between space-y-8 py-10 lg:flex-row lg:space-y-0">
-          <div className="lg:w-1/3">
+      <footer className="mx-auto max-w-[1024px] bg-white px-4 pt-[88px] text-primary-blue">
+        <div className="mx-auto flex flex-col justify-between">
+          <div className="flex flex-col gap-[40px] lg:flex-row lg:items-start lg:justify-between">
             <a
               target="_blank"
               rel="noreferrer"
               href="#"
-              className="flex justify-center space-x-3 lg:justify-start"
+              className="hidden justify-center self-center py-[68px] lg:flex lg:flex-1 lg:self-start lg:py-0"
             >
-              <img src="/images/logo/logo.png" alt="Della7" />
+              <img className="h-[43.05px] w-[146.98px]" src="/images/logo/logo.png" alt="Della7" />
             </a>
-          </div>
-          <div className="grid grid-cols-3 gap-x-3 gap-y-8 text-sm sm:grid-cols-3 lg:w-2/3">
-            <div className="space-y-3">
-              <ul className="space-y-3">
+
+            <div className="flex justify-around lg:flex-auto">
+              <ul className="flex flex-col gap-[32px]">
                 <li>
                   <a target="_blank" rel="noreferrer" href="#">
                     Home
@@ -48,9 +47,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div className="space-y-3">
-              <ul className="space-y-3">
+              <ul className="flex flex-col gap-[32px]">
                 <li>
                   <a target="_blank" rel="noreferrer" href="#">
                     Privacy Policy
@@ -66,18 +63,18 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col justify-between space-y-3">
+            <div className="flex flex-col justify-center gap-[40px] lg:flex-1">
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="#"
-                className="flex w-fit items-center gap-5 rounded-3xl border-2 border-black p-2"
+                className="flex w-full items-center justify-center gap-5 rounded-full border-[1px] border-primary-blue p-2"
               >
                 Contact Us
                 <BsArrowRight />
               </a>
-              <div className="flex flex-col gap-3">
-                <div className="0">Follow Us</div>
+              <div className="flex flex-col items-center gap-3 lg:items-start lg:pt-[91px]">
+                <div className="pb-[3px] text-[16px]">Follow Us</div>
                 <div className="flex gap-2 text-xl">
                   <a
                     target="_blank"
@@ -119,8 +116,16 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="#"
+            className="flex justify-center space-x-3 self-center py-[68px] lg:hidden lg:justify-start"
+          >
+            <img className="h-[43.05px] w-[146.98px]" src="/images/logo/logo.png" alt="Della7" />
+          </a>
         </div>
-        <div className="py-6 text-center text-sm text-gray-400">
+        <div className="py-6 pt-10 text-center text-sm text-gray-400">
           © 2022 Della7 - IT Solutions. All rights reserved.
         </div>
       </footer>
