@@ -1,5 +1,4 @@
 import { BsArrowRight } from 'react-icons/bs';
-import ContactImg from '/images/backgrounds/contact.svg';
 
 const Contact = () => {
   return (

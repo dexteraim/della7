@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 import Bg from './components/Bg';
 
 function App() {
-  const newLocal = 'font-Helvetica w-screen';
+  const newLocal = 'font-Helvetica';
   return (
     <div id="home" className={newLocal}>
       <Bg />
