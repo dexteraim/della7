@@ -9,7 +9,7 @@ const Projects = () => {
       carouselState: { currentSlide },
     } = rest;
     return (
-      <div className="absolute top-2 right-4 flex gap-[12px] text-[24px]">
+      <div className="absolute top-[6rem] right-4 flex gap-[12px] text-[24px]">
         {' '}
         <button className="" onClick={() => goToSlide(currentSlide - 1)}>
           {' '}
@@ -61,7 +61,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="projects" className="relative mx-auto max-w-[1024px] px-4 pb-[88px] md:pb-[199.5px]">
+    <div id="projects" className="relative mx-auto max-w-[1024px] px-4 pt-[90px] lg:pt-[180px]">
       <div className="flex items-center justify-between pb-[34px] lg:flex lg:items-center lg:justify-between lg:pb-10">
         <div className="text-[28px] text-primary-blue">Projects</div>
         <a

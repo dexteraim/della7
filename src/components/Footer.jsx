@@ -73,7 +73,7 @@ const Footer = () => {
                 Contact Us
                 <BsArrowRight />
               </a>
-              <div className="flex flex-col items-center gap-3 lg:items-start lg:pt-[91px]">
+              <div className="hidden flex-col items-center gap-3 lg:items-start lg:pt-[91px]">
                 <div className="pb-[3px] text-[16px]">Follow Us</div>
                 <div className="flex gap-2 text-xl">
                   <a

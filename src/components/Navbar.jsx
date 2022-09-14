@@ -36,7 +36,7 @@ const Navbar = () => {
           transition: 'all 0.5s',
         }}
         id="home"
-        className="sticky top-0 z-50 flex h-14 items-center justify-between px-4 py-12 transition duration-500 lg:items-center "
+        className="sticky top-0 z-50 flex h-14 items-center justify-between px-4 py-12 transition duration-500 lg:items-center 2xl:px-[10%]"
       >
         <HashLink smooth to="/#home">
           <img src={Logo} alt="" className="w-[146.98px]" />
@@ -47,7 +47,7 @@ const Navbar = () => {
             showNav ? 'left-0 z-10' : 'transition-left -left-full lg:left-0 lg:top-0 lg:-z-10'
           } 
         fixed top-0 left-0 flex h-screen w-screen flex-col items-center justify-center gap-8 bg-white text-xl 
-        duration-500 lg:sticky lg:h-fit lg:w-fit lg:flex-row lg:items-center lg:justify-center lg:gap-[48px] lg:bg-transparent lg:text-[16px]`}
+        duration-500 lg:sticky lg:h-fit lg:w-fit lg:flex-row lg:items-center lg:justify-center lg:gap-[48px] lg:bg-transparent lg:text-[16px] xl:ml-[8rem]`}
         >
           <div className="flex w-40 items-center gap-3 lg:w-fit lg:gap-0">
             <IconContext.Provider value={{ className: 'lg:hidden' }}>
@@ -85,6 +85,7 @@ const Navbar = () => {
             </IconContext.Provider>
             <HashLink
               smooth
+              scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               className={(navData) =>
                 navData.isActive ? 'text-black transition duration-500 ' : 'text-gray'
               }
@@ -116,7 +117,7 @@ const Navbar = () => {
             <BsArrowRight />
           </HashLink>
         </div>
-        <div className="z-50 hidden gap-5 lg:flex">
+        <div className="z-50 hidden gap-2 lg:flex">
           <LanguageToggle />
           <HashLink
             smooth

@@ -10,12 +10,8 @@ const Header = () => {
       <div className="px-5 pb-[38px] text-center text-xl font-semibold md:pb-[90px]">
         Automation, Web Applications, Apps and Digitalisation.
       </div>
-      <img src={Header_image} alt="header image" className="hidden pb-[160px] md:block" />
-      <img
-        src={Header_image_mobile}
-        alt="header image"
-        className="h-auto max-w-full pb-[88px] md:hidden"
-      />
+      <img src={Header_image} alt="header image" className="hidden md:block" />
+      <img src={Header_image_mobile} alt="header image" className="h-auto max-w-full md:hidden" />
     </div>
   );
 };

@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <div
       id="about"
-      className="mx-auto flex max-w-[1024px] flex-wrap items-center justify-between gap-[48px] px-4 pb-[88px]"
+      className="mx-auto flex max-w-[1024px] flex-wrap items-center justify-between gap-[48px] px-4 pt-[90px] lg:pt-[160px]"
     >
       <h1 className="text-[28px] text-primary-blue md:text-[40px] lg:text-[50px]">
         Lorem ipsum dolor sit amet, consectetur adipiscin elit. Lacinia tristique est mattis a morbi

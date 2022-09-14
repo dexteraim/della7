@@ -48,28 +48,49 @@ const Clients = () => {
     slidesToShow: 5,
   };
   return (
-    <div id="clients" className="pb-[48px] pt-[2rem] lg:pb-[215px]">
+    <div id="clients" className="pt-[100px] ">
       <h1 className="pb-[17px] text-center text-[26px] font-semibold text-primary-blue">
         Our clients
       </h1>
       <div className="flex flex-col justify-center md:hidden">
         <Slider {...settings1}>
           {client.map(({ id, clientName }) => {
-            return <img key={id} src={clientName} alt="" className="h-[112px] w-[232.4px]" />;
+            return (
+              <img
+                key={id}
+                src={clientName}
+                alt=""
+                className="w-auto opacity-[50%] hover:opacity-100"
+              />
+            );
           })}
         </Slider>
       </div>
       <div className="hidden flex-col justify-center md:flex lg:hidden">
         <Slider {...settings2}>
           {client.map(({ id, clientName }) => {
-            return <img key={id} src={clientName} alt="" className="h-[112px] w-[232.4px]" />;
+            return (
+              <img
+                key={id}
+                src={clientName}
+                alt=""
+                className="h-[112px] w-[232.4px] opacity-[50%] hover:opacity-100"
+              />
+            );
           })}
         </Slider>
       </div>
       <div className="hidden flex-col justify-center lg:flex">
         <Slider {...settings3}>
           {client.map(({ id, clientName }) => {
-            return <img key={id} src={clientName} alt="" className="h-[112px] w-[232.4px]" />;
+            return (
+              <img
+                key={id}
+                src={clientName}
+                alt=""
+                className="h-[112px] w-[232.4px] opacity-[50%] hover:opacity-100"
+              />
+            );
           })}
         </Slider>
       </div>
