@@ -39,7 +39,7 @@ const Tasks = () => {
   };
   return (
     <>
-      <div className="lg:hidden">
+      <div className="hidden">
         <Carousel
           responsive={responsive}
           infinite={true}
