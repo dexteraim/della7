@@ -7,7 +7,7 @@ import { HashLink } from 'react-router-hash-link';
 const Footer = () => {
   return (
     <>
-      <img className="w-screen pb-8 lg:pt-[72px]" src="/images/footer/team.png" alt="team" />
+      <img className="w-screen pb-8 pt-[72px]" src="/images/footer/team.png" alt="team" />
       <footer className="mx-auto max-w-[1024px] bg-white px-4 pt-[88px] text-primary-blue">
         <div className="mx-auto flex flex-col justify-between">
           <div className="flex flex-col gap-[40px] lg:flex-row lg:items-start lg:justify-between">
