@@ -2,11 +2,12 @@ import { FaFacebook } from 'react-icons/fa';
 import { AiFillGithub, AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
 import { BsArrowRight } from 'react-icons/bs';
 import LanguageToggle from './Languagetoggle';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   return (
     <>
-      <img className="w-screen pb-8" src="/images/footer/team.png" alt="team" />
+      <img className="w-screen pb-8 lg:pt-[72px]" src="/images/footer/team.png" alt="team" />
       <footer className="mx-auto max-w-[1024px] bg-white px-4 pt-[88px] text-primary-blue">
         <div className="mx-auto flex flex-col justify-between">
           <div className="flex flex-col gap-[40px] lg:flex-row lg:items-start lg:justify-between">
@@ -64,15 +65,14 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex flex-col justify-center gap-[40px] lg:flex-1">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="#"
+              <HashLink
+                smooth
+                to="#contact"
                 className="flex w-full items-center justify-center gap-5 rounded-full border-[1px] border-primary-blue p-2"
               >
                 Contact Us
                 <BsArrowRight />
-              </a>
+              </HashLink>
               <div className="hidden flex-col items-center gap-3 lg:items-start lg:pt-[91px]">
                 <div className="pb-[3px] text-[16px]">Follow Us</div>
                 <div className="flex gap-2 text-xl">
