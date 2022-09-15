@@ -46,7 +46,7 @@ const Navbar = () => {
           className={`${
             showNav ? 'left-0 z-10' : 'transition-left -left-full lg:left-0 lg:top-0 lg:-z-10'
           } 
-        fixed top-0 left-0 flex h-screen w-screen flex-col items-center justify-center gap-8 bg-white text-xl 
+        fixed top-0 left-0 flex h-[-webkit-fill-available] w-screen flex-col items-center justify-center gap-8 bg-white text-xl 
         duration-500 lg:sticky lg:h-fit lg:w-fit lg:flex-row lg:items-center lg:justify-center lg:gap-[48px] lg:bg-transparent lg:text-[16px] xl:ml-[8rem]`}
         >
           <div className="flex w-40 items-center gap-3 lg:w-fit lg:gap-0">
