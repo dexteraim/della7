@@ -12,7 +12,7 @@ jobs:
       - name: Install npm 7
         run: npm i -g npm@7 --registry=https://registry.npmjs.org
       - name: Install
-        run: npm install
+        run: npm install --legacy-peer-deps
       - name: Build
         env:
           COVEO_ACCESS_TOKEN: ${{ secrets.COVEO_ACCESS_TOKEN }}
