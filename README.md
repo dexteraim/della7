@@ -15,7 +15,7 @@
 </ul><ul>
 <li>yarn</li>
 </p><h2>Setup</h2>
-<hr><p>Clone down this repository. You will need node and yarn installed globally on your machine:</p><h5>Steps</h5><ul>
+<hr><p>Clone down this repository. You will need node and yarn installed globally on your machine.</p><h5>Steps</h5><ul>
 <li>yarn install</li>
 </ul><ul>
 <li>yarn dev</li>
