@@ -14,8 +14,7 @@
 <li>Tailwind</li>
 </ul><ul>
 <li>yarn</li>
-</ul><h2>Screenshots</h2>
-<hr><p>![](public/images/view/della7.vercel.app_(Nest Hub Max).pngapp_(Nest%20Hub%20Max).png "")</p><h2>Setup</h2>
+</p><h2>Setup</h2>
 <hr><p>Clone down this repository. You will need node and yarn installed globally on your machine.</p><h5>Steps</h5><ul>
 <li>yarn install</li>
 </ul><ul>
